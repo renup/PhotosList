@@ -22,7 +22,7 @@ final class PhotosTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        getPictures()
     }
     
     private func getPictures() {
@@ -44,8 +44,9 @@ extension PhotosTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier) as! PhotoCell
+        cell.configureCell(photo: photosDataSource[indexPath.row])
+        return cell
     }
 }
 

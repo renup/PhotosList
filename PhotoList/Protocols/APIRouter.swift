@@ -7,9 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+typealias ImageResponse = (UIImage?, Error?)-> Void
 
 protocol APIRouter {
    static func performRequest<T: Decodable>(route: APIConfiguration, completion: @escaping ((T?, Error?)-> Void)) -> URLSessionTask?
+
+    static func performRequestFor(imageString: String, completion: @escaping ImageResponse) -> URLSessionTask?
 }
 
 extension APIRouter {
@@ -21,6 +26,25 @@ extension APIRouter {
             urlComponents.queryItems = route.parameters
         }
         return urlComponents.url
+    }
+    
+    static func performRequestFor(imageString: String, completion: @escaping ImageResponse) -> URLSessionTask? {
+        guard let url = URL(string: imageString) else { return nil }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                completion(nil, error)
+            } else {
+                if let dt = data {
+                    let img = UIImage(data: dt)
+                    completion(img, nil)
+                    return
+                }
+                completion(nil, nil)
+            }
+        }
+        task.resume()
+        return task
     }
     
     static func performRequest<T: Decodable>(route: APIConfiguration, completion: @escaping ((T?, Error?)-> Void)) -> URLSessionTask? {

@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 final class PhotosViewModel {
     
     @discardableResult
     static func getPhotosList(_ completion: @escaping PhotosListResponse) -> URLSessionTask? {
        return PhotosRouter.fetchPhotosList { (photos, error) in
+        DispatchQueue.main.async {
             if error != nil {
                 completion(nil, error)
             } else {
@@ -21,6 +23,20 @@ final class PhotosViewModel {
                     return
                 }
                 completion(picturesArray, nil)
+            }
+        }
+        
+        }
+    }
+    
+    static func getImage(for imageString: String, completion: @escaping ((UIImage?, Error?) -> Void)) -> URLSessionTask? {
+        return PhotosRouter.fetchImage(for: imageString){ (image, error) in
+            DispatchQueue.main.async {
+                if error != nil {
+                    completion(nil, error)
+                } else {
+                    completion(image, nil)
+                }
             }
         }
     }
