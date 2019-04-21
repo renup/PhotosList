@@ -11,6 +11,7 @@ import Foundation
 enum PhotosEndPoint: APIConfiguration {
     
     case photos
+    case morePhotos(page: Int)
     
     struct Constants {
         static let baseURL = "https://picsum.photos/v2"
@@ -19,7 +20,7 @@ enum PhotosEndPoint: APIConfiguration {
     
     var method: String {
         switch self {
-        case .photos:
+        case .photos, .morePhotos(_):
             return "GET"
         }
     }
@@ -28,12 +29,15 @@ enum PhotosEndPoint: APIConfiguration {
         switch self {
         case .photos:
             return []
+        case .morePhotos(let page):
+                let pageQueryItem = URLQueryItem(name: "page", value: page.description)
+            return [pageQueryItem]
         }
     }
     
     var path: String {
         switch self {
-        case .photos:
+        case .photos, .morePhotos(_):
             return Constants.baseURL + Constants.list
         }
     }

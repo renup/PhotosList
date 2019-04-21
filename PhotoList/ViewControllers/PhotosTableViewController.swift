@@ -14,6 +14,7 @@ final class PhotosTableViewController: UITableViewController {
         static let cellIdentifier = "photoCell"
     }
     
+    var page = 0
     var photosDataSource: [Photo] = [] {
         didSet {
             tableView.reloadData()
@@ -47,6 +48,21 @@ extension PhotosTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier) as! PhotoCell
         cell.configureCell(photo: photosDataSource[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == photosDataSource.count - 1 { // we've reached to the end of the tableview. so we should fetch next set of photos
+            page += 1
+            PhotosViewModel.getMorePictures(page: page) {[unowned self] (photos, error) in
+                if error != nil {
+                    //show alert
+                } else {
+                    guard let pics = photos else { return }
+                    self.photosDataSource += pics
+                }
+            }
+            
+        }
     }
 }
 

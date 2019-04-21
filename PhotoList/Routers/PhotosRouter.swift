@@ -18,7 +18,13 @@ final class PhotosRouter: APIRouter {
        return performRequest(route: PhotosEndPoint.photos, completion: completion)
     }
     
+    @discardableResult
+    static func fetchMorePhotos(page: Int, completion: @escaping PhotosListResponse) -> URLSessionTask? {
+        return performRequest(route: PhotosEndPoint.morePhotos(page: page), completion: completion)
+    }
+    
     static func fetchImage(for imageString: String, completion: @escaping ImageResponse) -> URLSessionTask? {
         return performRequestFor(imageString: imageString, completion: completion)
     }
+    
 }

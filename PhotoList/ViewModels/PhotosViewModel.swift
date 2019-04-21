@@ -41,4 +41,17 @@ final class PhotosViewModel {
         }
     }
     
+    @discardableResult
+    static func getMorePictures(page: Int = 0, completion: @escaping PhotosListResponse) -> URLSessionTask? {
+        return PhotosRouter.fetchMorePhotos(page: page, completion: { (photos, error) in
+            DispatchQueue.main.async {
+                if error != nil {
+                    completion(nil, error)
+                } else {
+                    completion(photos, nil)
+                }
+            }
+        })
+    }
+    
 }
