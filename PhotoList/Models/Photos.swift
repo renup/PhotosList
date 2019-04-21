@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Photos: Decodable {
+    var photos: [Photo]?
+}
+
+struct Photo: Decodable {
+    var author: String?
+    var download_url: String?
+}

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol APIConfiguration {
+    var method: String { get }
+    var parameters: [URLQueryItem] { get }
+    var path: String { get }
+}

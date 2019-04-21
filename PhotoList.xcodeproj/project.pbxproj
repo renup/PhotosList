@@ -19,6 +19,8 @@
 		3B259865226B4B4E00DB38CA /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259864226B4B4E00DB38CA /* Photos.swift */; };
 		3B259867226B4B5E00DB38CA /* PhotosEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259866226B4B5E00DB38CA /* PhotosEndpoint.swift */; };
 		3B259869226B4B6D00DB38CA /* PhotosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259868226B4B6D00DB38CA /* PhotosRouter.swift */; };
+		D7ACE560226BFE19004779B0 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACE55F226BFE19004779B0 /* APIRouter.swift */; };
+		D7ACE563226C0A57004779B0 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACE562226C0A57004779B0 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		3B259864226B4B4E00DB38CA /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		3B259866226B4B5E00DB38CA /* PhotosEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosEndpoint.swift; sourceTree = "<group>"; };
 		3B259868226B4B6D00DB38CA /* PhotosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosRouter.swift; sourceTree = "<group>"; };
+		D7ACE55F226BFE19004779B0 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		D7ACE562226C0A57004779B0 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		3B25982B226B49FB00DB38CA /* PhotoList */ = {
 			isa = PBXGroup;
 			children = (
+				D7ACE561226C0A01004779B0 /* Views */,
 				3B25985F226B4AF100DB38CA /* Models */,
 				3B25985E226B4AD000DB38CA /* EndPoints */,
 				3B25985D226B4AC900DB38CA /* Routers */,
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				3B259862226B4B3A00DB38CA /* APIConfiguration.swift */,
+				D7ACE55F226BFE19004779B0 /* APIRouter.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -186,6 +192,14 @@
 				3B259864226B4B4E00DB38CA /* Photos.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D7ACE561226C0A01004779B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7ACE562226C0A57004779B0 /* PhotoCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,10 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B259861226B4B0D00DB38CA /* PhotosViewModel.swift in Sources */,
+				D7ACE563226C0A57004779B0 /* PhotoCell.swift in Sources */,
 				3B259869226B4B6D00DB38CA /* PhotosRouter.swift in Sources */,
 				3B25982F226B49FB00DB38CA /* PhotosTableViewController.swift in Sources */,
 				3B25982D226B49FB00DB38CA /* AppDelegate.swift in Sources */,
 				3B259867226B4B5E00DB38CA /* PhotosEndpoint.swift in Sources */,
+				D7ACE560226BFE19004779B0 /* APIRouter.swift in Sources */,
 				3B259865226B4B4E00DB38CA /* Photos.swift in Sources */,
 				3B259863226B4B3A00DB38CA /* APIConfiguration.swift in Sources */,
 			);

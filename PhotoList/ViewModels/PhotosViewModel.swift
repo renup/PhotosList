@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+final class PhotosViewModel {
+    
+    @discardableResult
+    static func getPhotosList(_ completion: @escaping PhotosListResponse) -> URLSessionTask? {
+       return PhotosRouter.fetchPhotosList { (photos, error) in
+            if error != nil {
+                completion(nil, error)
+            } else {
+                guard let picturesArray = photos else {
+                    completion(nil, nil)
+                    return
+                }
+                completion(picturesArray, nil)
+            }
+        }
+    }
+    
+}

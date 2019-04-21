@@ -7,3 +7,36 @@
 //
 
 import Foundation
+
+enum PhotosEndPoint: APIConfiguration {
+    
+    case photos
+    
+    struct Constants {
+        static let baseURL = "https://picsum.photos/v2"
+        static let list = "/list"
+    }
+    
+    var method: String {
+        switch self {
+        case .photos:
+            return "GET"
+        }
+    }
+    
+    var parameters: [URLQueryItem] {
+        switch self {
+        case .photos:
+            return []
+        }
+    }
+    
+    var path: String {
+        switch self {
+        case .photos:
+            return Constants.baseURL + Constants.list
+        }
+    }
+    
+    
+}
