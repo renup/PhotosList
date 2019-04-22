@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoList/ViewControllers/PhotosTableViewController.swift"
-            timestampString = "577579992.168505"
+            timestampString = "577591065.144441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -40,7 +40,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoList/ViewControllers/PhotosTableViewController.swift"
-            timestampString = "577579992.168851"
+            timestampString = "577591065.144542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -54,7 +54,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoList/ViewControllers/PhotosTableViewController.swift"
-            timestampString = "577579992.169134"
+            timestampString = "577591065.144623"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -64,11 +64,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoList/ViewControllers/PhotosTableViewController.swift"
-            timestampString = "577579992.169451"
+            timestampString = "577591065.144699"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -77,14 +77,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PhotoList.PhotosTableViewController.(getPictures in _37B8F3CB4C1D2541F8FE983AFE2EF42F)() -&gt; ()"
                   moduleName = "PhotoList"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anilpunjabi/Documents/iOS%20Projects/PhotoList/PhotoList/ViewControllers/PhotosTableViewController.swift"
-                  timestampString = "577586028.473029"
+                  timestampString = "577589247.697069"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -92,14 +92,14 @@
                   offsetFromSymbolStart = "26">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;PhotoList.Photo&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PhotoList.PhotosTableViewController.(getPictures in _37B8F3CB4C1D2541F8FE983AFE2EF42F)() -&gt; ()"
                   moduleName = "PhotoList"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anilpunjabi/Documents/iOS%20Projects/PhotoList/PhotoList/ViewControllers/PhotosTableViewController.swift"
-                  timestampString = "577586028.479129"
+                  timestampString = "577589247.700248"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"

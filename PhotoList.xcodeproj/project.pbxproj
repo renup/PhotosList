@@ -15,15 +15,18 @@
 		3B259832226B49FB00DB38CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B259830226B49FB00DB38CA /* Main.storyboard */; };
 		3B259834226B49FD00DB38CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B259833226B49FD00DB38CA /* Assets.xcassets */; };
 		3B259837226B49FD00DB38CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B259835226B49FD00DB38CA /* LaunchScreen.storyboard */; };
-		3B259842226B49FD00DB38CA /* PhotoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259841226B49FD00DB38CA /* PhotoListTests.swift */; };
 		3B25984D226B49FD00DB38CA /* PhotoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25984C226B49FD00DB38CA /* PhotoListUITests.swift */; };
 		3B259861226B4B0D00DB38CA /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259860226B4B0D00DB38CA /* PhotosViewModel.swift */; };
 		3B259863226B4B3A00DB38CA /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259862226B4B3A00DB38CA /* APIConfiguration.swift */; };
 		3B259865226B4B4E00DB38CA /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259864226B4B4E00DB38CA /* Photos.swift */; };
 		3B259867226B4B5E00DB38CA /* PhotosEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259866226B4B5E00DB38CA /* PhotosEndpoint.swift */; };
 		3B259869226B4B6D00DB38CA /* PhotosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B259868226B4B6D00DB38CA /* PhotosRouter.swift */; };
-		D7AB2D9C226D422C0010A833 /* photoListResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7AB2D9B226D422C0010A833 /* photoListResponse.txt */; };
+		D72480D0226D5EC9004CC905 /* Mockingjay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72480CF226D5EC9004CC905 /* Mockingjay.framework */; };
+		D72480D2226D5EC9004CC905 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72480D1226D5EC9004CC905 /* Nimble.framework */; };
+		D72480D4226D5EC9004CC905 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72480D3226D5EC9004CC905 /* Quick.framework */; };
 		D7AB2D9E226D42B50010A833 /* PhotosAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AB2D9D226D42B50010A833 /* PhotosAPITest.swift */; };
+		D7AB2DA2226D484F0010A833 /* XCTest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AB2DA1226D484F0010A833 /* XCTest+Extension.swift */; };
+		D7AB2DB0226D5B7F0010A833 /* photosList.json in Resources */ = {isa = PBXBuildFile; fileRef = D7AB2DAF226D5B7F0010A833 /* photosList.json */; };
 		D7ACE560226BFE19004779B0 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACE55F226BFE19004779B0 /* APIRouter.swift */; };
 		D7ACE563226C0A57004779B0 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ACE562226C0A57004779B0 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
@@ -55,7 +58,6 @@
 		3B259836226B49FD00DB38CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B259838226B49FD00DB38CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B25983D226B49FD00DB38CA /* PhotoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B259841226B49FD00DB38CA /* PhotoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListTests.swift; sourceTree = "<group>"; };
 		3B259843226B49FD00DB38CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B259848226B49FD00DB38CA /* PhotoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25984C226B49FD00DB38CA /* PhotoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListUITests.swift; sourceTree = "<group>"; };
@@ -72,8 +74,12 @@
 		9CAFB72813BB89209478CE97 /* Pods_PhotoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B769E8D41042387FEFE17B90 /* Pods-PhotoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoList/Pods-PhotoList.release.xcconfig"; sourceTree = "<group>"; };
 		B7E378A7E03AC2382DBA6405 /* Pods-PhotoListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoListTests/Pods-PhotoListTests.release.xcconfig"; sourceTree = "<group>"; };
-		D7AB2D9B226D422C0010A833 /* photoListResponse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = photoListResponse.txt; sourceTree = "<group>"; };
+		D72480CF226D5EC9004CC905 /* Mockingjay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mockingjay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72480D1226D5EC9004CC905 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72480D3226D5EC9004CC905 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AB2D9D226D42B50010A833 /* PhotosAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPITest.swift; sourceTree = "<group>"; };
+		D7AB2DA1226D484F0010A833 /* XCTest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Extension.swift"; sourceTree = "<group>"; };
+		D7AB2DAF226D5B7F0010A833 /* photosList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = photosList.json; sourceTree = "<group>"; };
 		D7ACE55F226BFE19004779B0 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		D7ACE562226C0A57004779B0 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		FB66BF43A8C5BFE5CCF023A0 /* Pods-PhotoListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoListTests/Pods-PhotoListTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72480D0226D5EC9004CC905 /* Mockingjay.framework in Frameworks */,
+				D72480D2226D5EC9004CC905 /* Nimble.framework in Frameworks */,
+				D72480D4226D5EC9004CC905 /* Quick.framework in Frameworks */,
 				0E861D2978F95AF3F29C8026 /* Pods_PhotoListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,8 +173,8 @@
 		3B259840226B49FD00DB38CA /* PhotoListTests */ = {
 			isa = PBXGroup;
 			children = (
-				D7AB2D9B226D422C0010A833 /* photoListResponse.txt */,
-				3B259841226B49FD00DB38CA /* PhotoListTests.swift */,
+				D7AB2DAE226D5A4C0010A833 /* Fixtures */,
+				D7AB2DA1226D484F0010A833 /* XCTest+Extension.swift */,
 				D7AB2D9D226D42B50010A833 /* PhotosAPITest.swift */,
 				3B259843226B49FD00DB38CA /* Info.plist */,
 			);
@@ -230,6 +239,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D7AB2DAE226D5A4C0010A833 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				D7AB2DAF226D5B7F0010A833 /* photosList.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		D7ACE561226C0A01004779B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +258,9 @@
 		EC0D9AC2CA1EEFE56F029FE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D72480CF226D5EC9004CC905 /* Mockingjay.framework */,
+				D72480D1226D5EC9004CC905 /* Nimble.framework */,
+				D72480D3226D5EC9004CC905 /* Quick.framework */,
 				9CAFB72813BB89209478CE97 /* Pods_PhotoList.framework */,
 				661C7F3091920E81FEFE67E1 /* Pods_PhotoListTests.framework */,
 				492FC6D39688675384F25D25 /* Pods_PhotoListUITests.framework */,
@@ -366,7 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7AB2D9C226D422C0010A833 /* photoListResponse.txt in Resources */,
+				D7AB2DB0226D5B7F0010A833 /* photosList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,8 +501,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B259842226B49FD00DB38CA /* PhotoListTests.swift in Sources */,
 				D7AB2D9E226D42B50010A833 /* PhotosAPITest.swift in Sources */,
+				D7AB2DA2226D484F0010A833 /* XCTest+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,9 +669,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33AD6238B83FD4FB6AE469D2 /* Pods-PhotoList.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L88M38NBF2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PhotoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -668,9 +690,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B769E8D41042387FEFE17B90 /* Pods-PhotoList.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L88M38NBF2;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PhotoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

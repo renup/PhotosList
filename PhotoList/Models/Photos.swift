@@ -13,6 +13,7 @@ struct Photos: Decodable {
 }
 
 struct Photo: Decodable {
+    var id: Int?
     var author: String?
     var download_url: String?
 }
